@@ -1,0 +1,89 @@
+:root {
+    --logo-height: 100px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+body {
+    padding: 10vh 0;
+}
+
+section {
+    margin: 5vh 0;
+    padding: 0 10vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 2vh;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 2vh 0;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.logo {
+    height: var(--logo-height);
+}
+
+.smaller-logo {
+    height: calc(0.5 * var(--logo-height));
+}
+
+figure {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figure-img,
+.figure-caption {
+    max-width: 800px;
+}
+
+.figure-caption {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.halves-container,
+.thirds-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.halves-container figure {
+    width: 49%;
+}
+
+.halves-container .figure-img {
+    width: 100%;
+}
+
+.thirds-container figure {
+    width: 33%;
+}
+
+.thirds-container .figure-img {
+    width: 100%;
+}
